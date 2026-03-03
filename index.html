@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>X Profile Analyzer – Powered by Grok</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>X Personality AI</h1>
+      <p class="subtitle">Deep dive into any public X account – personality, vibes & more</p>
+    </header>
+
+    </div>
+  
+
+    <div class="input-area">
+      <input type="text" id="username" placeholder="@username or just username" />
+      <button id="analyzeBtn">Profile Summary</button>
+    </div>
+
+    <div id="loading" class="hidden">
+      <img src="assets/loading.gif" alt="Loading..." />
+      <p>Checking X user tweets… this may take a couple of seconds</p>
+    </div>
+
+    <div id="result" class="hidden">
+      <div class="profile-header">
+        <img id="avatar" src="" alt="Avatar" />
+        <div>
+          <h2 id="name"></h2>
+          <p id="handle"></p>
+          <p id="bio"></p>
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="card">
+          <h3>📊 Account Coverage</h3>
+          <div id="stats"></div>
+        </div>
+
+        <div class="card">
+          <h3>🧠 Personality Snapshot</h3>
+          <div id="personality"></div>
+        </div>
+
+        <div class="card">
+          <h3>❤ Core Interests & Topics</h3>
+          <div id="interests"></div>
+        </div>
+
+        <div class="card vibe">
+          <h3>✦ Vibe Check</h3>
+          <div id="vibe"></div>
+        </div>
+      </div>
+
+      <button id="newBtn" class="new-analysis">Analyze another profile</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
